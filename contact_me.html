@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+</head>
+
+<body>
+    <p><big></p>Форма обратной связи</big></p>
+
+    <!--action — ссылка на скрипт, обычно PHP, который 
+    будет обрабатывать введенные в форму данные.-->
+    <form action="/" method="post">
+
+        Фамилия:<br>
+        <input type='text' name='lastname'><br>
+        Имя:<br>
+        <input type='text' name='firstname'><br>
+        Электронная почта:<br>
+        <input type='text' name='email'><br>
+
+        <!--Параметр "for" явно связывает содержимое label 
+        элемента с элементом формы "input".-->
+        <br><label for="phone">Номер телефона: </label>
+        <input type='text' id='phone'><br>
+
+        <br><input type="radio" name="data">
+        Согласие на обработку данных<br>
+
+        <br><label>
+            <button formnovalidate type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </label>
+    </form>
+</body>
+
+</html>
